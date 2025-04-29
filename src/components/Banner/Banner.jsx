@@ -7,7 +7,6 @@ const Banner = () => {
   return (
     <section className="bg-gray-900 text-white py-16">
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        {/* Banner Text */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -36,7 +35,6 @@ const Banner = () => {
             </div>
           </div>
         </motion.div>
-        {/* Banner Image */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}

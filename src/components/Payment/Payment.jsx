@@ -16,7 +16,7 @@ const Payment = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          amount: 10.0, // Replace with dynamic value if needed
+          amount: 10.0, 
           currency: "USD",
           description: "Course Payment",
         }),
@@ -47,7 +47,7 @@ const Payment = () => {
             purchase_units: [
               {
                 amount: {
-                  value: "10.00", // Replace with dynamic value if needed
+                  value: "10.00", 
                 },
               },
             ],
@@ -79,7 +79,7 @@ const Payment = () => {
         transition={{ duration: 0.5 }}
         className="bg-white max-w-md w-full rounded-lg shadow-xl p-8"
       >
-        {/* PayPal Logo */}
+
         <div className="flex justify-center mb-6">
           <img
             src="https://www.paypalobjects.com/webstatic/icon/pp258.png"
@@ -88,13 +88,13 @@ const Payment = () => {
           />
         </div>
 
-        {/* Payment Info */}
+
         <div className="text-center mb-6">
           <h2 className="text-2xl font-semibold text-gray-800">Pay with PayPal</h2>
           <p className="text-gray-600 mt-2">Secure payment processing</p>
         </div>
 
-        {/* Amount Box */}
+
         <div className="border rounded-lg p-4 mb-6 bg-gray-50">
           <div className="flex justify-between items-center mb-2">
             <span className="text-gray-700">Amount</span>
@@ -103,7 +103,7 @@ const Payment = () => {
           <div className="text-xs text-gray-400 text-right">Including all taxes</div>
         </div>
 
-        {/* Payment Method Buttons */}
+
         <div className="mb-6">
           <p className="text-sm text-gray-600 mb-2">Select Payment Method</p>
           <div className="flex space-x-4">
@@ -122,15 +122,15 @@ const Payment = () => {
           </div>
         </div>
 
-        {/* PayPal Button */}
+
         <div id="paypal-button-container" className="mb-4"></div>
 
-        {/* Support Message */}
+
         <p className="text-xs text-center text-gray-400">
           You will be redirected to PayPal to complete your payment securely.
         </p>
 
-        {/* Payment Status */}
+
         {paymentStatus && (
           <div
             className={`mt-4 text-center font-bold ${

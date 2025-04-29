@@ -56,7 +56,7 @@ const WatchVideo = () => {
   return (
     <section className="watch-video p-6 bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen text-white">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Video Player Section */}
+
         <div className="lg:col-span-2">
           <div className="video-container bg-gray-800 rounded-lg shadow-lg p-4">
             <video
@@ -72,7 +72,7 @@ const WatchVideo = () => {
           </div>
         </div>
 
-        {/* Next Videos Section */}
+
         <div className="next-videos bg-gray-800 rounded-lg shadow-lg p-4">
           <h2 className="text-xl font-bold text-green-400 mb-4">Next Videos</h2>
           <ul className="space-y-4">
@@ -98,7 +98,6 @@ const WatchVideo = () => {
           </ul>
         </div>
 
-        {/* Comments Section */}
         <div className="comments-section lg:col-span-3 bg-gray-800 rounded-lg shadow-lg p-6">
           <h2 className="text-xl font-bold text-green-400 mb-4">Comments</h2>
           <form onSubmit={handleAddComment} className="mb-6">
